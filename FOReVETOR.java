@@ -1,4 +1,4 @@
-// Andson de Queiroz Domingues, 3ADS
+// Calcular a média de 5 notas, utilizando um vetor.
 
 import java.util.Scanner;
 public class FOReVETOR{
