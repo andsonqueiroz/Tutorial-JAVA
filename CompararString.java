@@ -2,7 +2,7 @@
 O usuário digitará o nome do produto e o algoritmo imprimirá o nome e o preço. */
 
 import java.util.Scanner;
-public class BuscarProduto {
+public class CompararString {
     public static void main(String[] args){
         Scanner ler = new Scanner(System.in);       // DECLARAÇÃO DA FUNÇÃO scanner DADOS COM O NOME ler
         
