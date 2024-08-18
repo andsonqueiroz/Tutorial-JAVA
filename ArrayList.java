@@ -36,12 +36,12 @@ public class ArrayList {
                     System.out.println("Digite o nome do produto: ");
                     novoProduto = ler.nextLine();       // coletar o nome e armazenar em "novoProduto".
 
-                    produtos.add(novoProduto);      // aqui criou um novo vetor e armazenou o dado de "novoProduto".
+                    produtos.add(novoProduto);      // aqui criou um novo vetor no arraylist "produtos" e armazenou o dado de "novoProduto".
 
                     System.out.println("Digite o valor do produto: ");
-                    novoValor = ler.nextDouble();
+                    novoValor = ler.nextDouble();    // coletar o valor e armazenar em "novoValor".
 
-                    valor.add(novoValor);
+                    valor.add(novoValor);        // criar um novo vetor no arraylist "valor" e armazenar o valor da variável "valor".
 
                     System.out.println("Produto adicionado.");
                     break;
@@ -51,12 +51,15 @@ public class ArrayList {
 
                     for(int i = 0; i<produtos.size(); i++){
 
-                        System.out.println("produto " + i + ": " + produtos.get(i));
+                        System.out.println("produto " + i + ": " + produtos.get(i));     /* Para pegar a posição de um vetor do arraylist, é neccessário
+                                                                                      colocar "nomeVetor.get(posição)" ao invés de "nomeVetor[posição]" */
                     }
 
-                    remover = ler.nextInt();
+                    remover = ler.nextInt();        // Variável utilizada para armazenar o número (posição do vetor que irá remover)
                        
-                    produtos.remove(remover);
+                    produtos.remove(remover);        /* Para remover um vetor do arraylist, ao invés de utilizar ".get()", utiliza .remove()
+                                                        nomeVetor.remove(posição)  */
+                        
                        
                     System.out.println("Produto removido!");
 
@@ -66,6 +69,7 @@ public class ArrayList {
                     for(int i=0; i<produtos.size(); i++){
                         System.out.println(produtos.get(i) + " - R$" + valor.get(i));
                     }
+                    break;
             }
         }
        
