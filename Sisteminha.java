@@ -77,6 +77,7 @@ public class Sisteminha {
 				int password = ler.nextInt();
 				
 				if(password == senha) {
+					System.out.print("\033c");	
 					System.out.println("Logado com Sucesso!");
 					
 					logado = true;
