@@ -2,8 +2,8 @@
 
 package Questao1;
 
-public class Livro {
-	private String titulo;
+public class Encapsulamento {
+	private String titulo;		// atributos privados, na qual ficarão invisiveis em outras classes
 	private String autor;
 	private String editora;
 	private int nroPaginas;
@@ -12,13 +12,13 @@ public class Livro {
 	public Livro(String titulo, String autor, String editora, int nroPaginas, double preco) {
 		this.titulo = titulo;
 		this.autor = autor;
-		this.editora = editora;
+		this.editora = editora;			// construtor, para inserir dados na hora de criar o objeto
 		this.nroPaginas = nroPaginas;
 		this.preco = preco;
 	}
 	
 	public String getTitulo() {
-		return titulo;
+		return titulo;			//o GET é um método para retornar dado do atributo privado (já que serão invisíveis, não podem ser chamados ou alterados diretamente.)
 	}
 	
 	public String getAutor() {
@@ -38,7 +38,7 @@ public class Livro {
 	}
 	
 	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+		this.titulo = titulo;			// o SET é um método para setar informações nos atributos privados, já que serão invisíveis, não podem ser chamados ou alterados diretamente.
 	}
 	
 	public void setAutor(String autor) {
@@ -57,7 +57,7 @@ public class Livro {
 		this.preco = preco;
 	}
 	
-	public void exibirLivro() {
+	public void exibirLivro() {			// método para exibir as informações.
 		System.out.println("Titulo: " + getTitulo() + " | Autor" + getAutor());
 	}
 }
