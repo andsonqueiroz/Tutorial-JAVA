@@ -8,7 +8,7 @@ public class Livro extends Publicacao{
 	
 	public Livro(String titulo, String autor, int numero) {
 		super(titulo, autor);	// Esse "SUPER(parâmetros)" é o constructor da classe mãe/superclasse,
-								// como a subclasse possui todos os atributos da superclasse, precisa preencher o constructor da superclasse.
+					// como a subclasse possui todos os atributos da superclasse, precisa preencher o constructor da superclasse.
 		this.numeroPaginas = numero;	
 	}
 	
